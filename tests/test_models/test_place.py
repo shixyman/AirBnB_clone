@@ -143,6 +143,7 @@ class TestPlace_instantiation(unittest.TestCase):
         with self.assertRaises(TypeError):
             Place(id=None, created_at=None, updated_at=None)
 
+
 class TestPlace_save(unittest.TestCase):
     """Unittests for testing save method of the Place class."""
 
@@ -192,6 +193,7 @@ class TestPlace_save(unittest.TestCase):
         plid = "Place." + pl.id
         with open("file.json", "r") as f:
             self.assertIn(plid, f.read())
+
 
 class TestPlace_to_dict(unittest.TestCase):
     """Unittests for testing to_dict method of the Place class."""

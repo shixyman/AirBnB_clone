@@ -89,6 +89,7 @@ class TestUser_instantiation(unittest.TestCase):
         with self.assertRaises(TypeError):
             User(id=None, created_at=None, updated_at=None)
 
+
 class TestUser_save(unittest.TestCase):
     """Unittests for testing save method of the  class."""
 

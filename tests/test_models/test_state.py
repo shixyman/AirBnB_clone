@@ -135,7 +135,6 @@ class TestState_save(unittest.TestCase):
             self.assertIn(stid, f.read())
 
 
-
 class TestState_to_dict(unittest.TestCase):
     """Unittests for testing to_dict method of the State class."""
 

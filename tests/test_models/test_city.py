@@ -89,6 +89,7 @@ class TestCity_instantiation(unittest.TestCase):
         with self.assertRaises(TypeError):
             City(id=None, created_at=None, updated_at=None)
 
+
 class TestCity_save(unittest.TestCase):
     """Unittests for testing save method of the City class."""
 
@@ -138,6 +139,7 @@ class TestCity_save(unittest.TestCase):
         cyid = "City." + cy.id
         with open("file.json", "r") as f:
             self.assertIn(cyid, f.read())
+
 
 class TestCity_to_dict(unittest.TestCase):
     """Unittests for testing to_dict method of the City class."""

@@ -111,4 +111,3 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
         else:
             print(objdict["{}.{}".format(argl[0], argl[1])])
-
